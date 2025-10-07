@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '../components/Navbar.vue'
+import Header from '../components/Header.vue'
 import { ref } from 'vue'
 
 defineProps({
@@ -11,7 +12,7 @@ const count = ref(0)
 
 <template>
 
-  <Navbar />
+  <Header />
 
 </template>
 

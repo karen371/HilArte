@@ -3,17 +3,17 @@ import logo from '../assets/logo-hilarte.png'
 
 </script>
 <template>
-  <nav class="bg-white shadow-md py-3 px-6 flex items-center justify-between">
+  <nav class="bg-transparent shadow-none py-3 px-6 flex items-center justify-between absolute w-full z-10">
     <!-- IZQUIERDA -->
     <div class="flex items-center space-x-8">
       <!-- Logo y nombre -->
       <router-link to="/" class="flex items-center space-x-2">
         <img :src=logo alt="Logo" class="h-10 w-10 object-contain" />
-        <span class="text-xl font-semibold text-gray-700">HilArte</span>
+        <span class="text-xl font-semibold text-white">HilArte</span>
       </router-link>
 
       <!-- Menú -->
-      <ul class="flex space-x-6 text-gray-600 font-medium">
+      <ul class="flex space-x-6 text-white font-medium">
         <li>
           <router-link to="/" class="hover:text-gray-900">Inicio</router-link>
         </li>
@@ -49,7 +49,7 @@ import logo from '../assets/logo-hilarte.png'
       <!-- Iniciar sesión -->
       <router-link
         to="/login"
-        class="text-gray-700 border border-gray-300 px-4 py-1.5 rounded-full hover:bg-gray-100"
+        class="bg-green-500 text-white  border border-green-500 px-4 py-1.5 rounded-full hover:bg-green-600"
       >
         Iniciar sesión
       </router-link>
